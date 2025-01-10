@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import java.sql.SQLException;
 import java.util.Comparator;
 import java.util.List;
@@ -69,4 +70,8 @@ public class CricketerServiceImplJpa implements CricketerService {
     public List<Cricketer> getCricketersByTeam(int teamId) throws SQLException {
         return cricketerRepository.findByTeam_TeamId(teamId);
     }
+=======
+public class CricketerServiceImplJpa  {
+
+>>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea
 }

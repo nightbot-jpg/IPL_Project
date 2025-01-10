@@ -1,5 +1,6 @@
 package com.wecp.progressive.repository;
 
+<<<<<<< HEAD
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -25,3 +26,8 @@ public interface CricketerRepository extends JpaRepository<Cricketer, Integer> {
     @Query("DELETE FROM Cricketer c WHERE c.team.teamId = :teamId")
     void deleteByTeamId(@Param("teamId") int teamId);
 }
+=======
+
+public interface CricketerRepository {
+}
+>>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea

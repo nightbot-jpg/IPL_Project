@@ -5,7 +5,10 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
+<<<<<<< HEAD
 @SuppressWarnings("deprecation")
+=======
+>>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -18,6 +21,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .csrf().disable(); // Disable CSRF protection if it's not needed
     }
+<<<<<<< HEAD
 }
 
 
+=======
+}
+>>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea

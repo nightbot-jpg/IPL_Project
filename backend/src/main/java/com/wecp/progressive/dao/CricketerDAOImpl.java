@@ -10,10 +10,17 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
 public class CricketerDAOImpl implements CricketerDAO {
 
     @Override
     public int addCricketer(Cricketer cricketer) throws SQLException {
+=======
+public class CricketerDAOImpl implements CricketerDAO{
+
+    @Override
+    public int addCricketer(Cricketer cricketer)throws SQLException {
+>>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea
         Connection connection = null;
         PreparedStatement statement = null;
         int generatedID = -1;
@@ -23,7 +30,11 @@ public class CricketerDAOImpl implements CricketerDAO {
             String sql = "INSERT INTO cricketer (team_id, cricketer_name, age, nationality, experience, role, total_runs, total_wickets) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             statement = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
 
+<<<<<<< HEAD
             statement.setInt(1, cricketer.getTeam().getTeamId());
+=======
+            statement.setInt(1, cricketer.getTeamId());
+>>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea
             statement.setString(2, cricketer.getCricketerName());
             statement.setInt(3, cricketer.getAge());
             statement.setString(4, cricketer.getNationality());
@@ -106,7 +117,11 @@ public class CricketerDAOImpl implements CricketerDAO {
             connection = DatabaseConnectionManager.getConnection();
             String sql = "UPDATE cricketer SET team_id = ?, cricketer_name = ?, age = ?, nationality = ?, experience = ?, role = ?, total_runs = ?, total_wickets = ? WHERE cricketer_id = ?";
             statement = connection.prepareStatement(sql);
+<<<<<<< HEAD
             statement.setInt(1, cricketer.getTeam().getTeamId());
+=======
+            statement.setInt(1, cricketer.getTeamId());
+>>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea
             statement.setString(2, cricketer.getCricketerName());
             statement.setInt(3, cricketer.getAge());
             statement.setString(4, cricketer.getNationality());
@@ -175,7 +190,11 @@ public class CricketerDAOImpl implements CricketerDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+<<<<<<< HEAD
             throw e; // Rethrow the exception
+=======
+            throw e;
+>>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea
         } finally {
             if (connection != null) {
                 connection.close();
