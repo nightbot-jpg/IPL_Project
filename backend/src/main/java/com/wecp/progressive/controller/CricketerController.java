@@ -1,7 +1,6 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.Cricketer;
-<<<<<<< HEAD
 import com.wecp.progressive.entity.Team;
 import com.wecp.progressive.exception.TeamCricketerLimitExceededException;
 import com.wecp.progressive.service.impl.CricketerServiceImplJpa;
@@ -82,37 +81,5 @@ public class CricketerController {
         } catch (SQLException e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
-=======
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
-
-@RestController
-public class CricketerController {
-
-    public ResponseEntity<List<Cricketer>> getAllCricketers() {
-        return null;
-    }
-
-    public ResponseEntity<Cricketer> getCricketerById(int cricketerId) {
-        return null;
-    }
-
-    public ResponseEntity<Integer> addCricketer(Cricketer cricketer) {
-        return null;
-    }
-
-    public ResponseEntity<Void> updateCricketer(int cricketerId, Cricketer cricketer) {
-        return null;
-    }
-
-    public ResponseEntity<Void> deleteCricketer(int cricketerId) {
-        return null;
-    }
-
-    public ResponseEntity<List<Cricketer>> getCricketersByTeam(int teamId) {
-        return null;
->>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea
     }
 }

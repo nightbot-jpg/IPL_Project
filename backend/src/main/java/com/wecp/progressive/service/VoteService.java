@@ -15,8 +15,4 @@ public interface VoteService {
     // and each value (v) represents the total number of votes for that category.
     Map<String, Long> getVotesCountOfAllCategories();
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea

@@ -1,6 +1,5 @@
 package com.wecp.progressive.controller;
 
-<<<<<<< HEAD
 import com.wecp.progressive.entity.Cricketer;
 import com.wecp.progressive.entity.Match;
 import com.wecp.progressive.exception.NoMatchesFoundException;
@@ -83,38 +82,5 @@ public class MatchController {
         catch (SQLException e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
-=======
-import com.wecp.progressive.entity.Match;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
-
-@RestController
-public class MatchController {
-
-    public ResponseEntity<List<Match>> getAllMatches() {
-        return null;
-    }
-
-    public ResponseEntity<Match> getMatchById(int matchId) {
-        return null;
-    }
-
-    public ResponseEntity<Integer> addMatch(Match match) {
-        return null;
-    }
-
-    public ResponseEntity<Void> updateMatch(int matchId, Match match) {
-        return null;
-    }
-
-    public ResponseEntity<Void> deleteMatch(int matchId) {
-        return null;
-    }
-
-    public ResponseEntity<List<Match>> getAllMatchesByStatus(String status) {
-        return null;
->>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea
     }
 }

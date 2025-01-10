@@ -1,6 +1,5 @@
 package com.wecp.progressive.entity;
 
-<<<<<<< HEAD
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -76,8 +75,4 @@ public class Vote {
     }
 
     
-=======
-public class Vote {
-
->>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea
 }

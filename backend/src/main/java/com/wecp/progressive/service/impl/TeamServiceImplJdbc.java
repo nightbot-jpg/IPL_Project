@@ -49,11 +49,7 @@ public class TeamServiceImplJdbc implements TeamService {
     public void deleteTeam(int teamId) throws SQLException {
         teamDAO.deleteTeam(teamId);
     }
-<<<<<<< HEAD
 }
 
 
 
-=======
-}
->>>>>>> 0016f57f3a81d23e2fd0915e1ebecdaa088f69ea
